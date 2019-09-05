@@ -50,36 +50,27 @@ namespace Entidades
         }
 
         public static bool operator !=(Estante e, Producto p)
-        {
-            foreach (Producto p1 in e.GetProductos())
-            {
-                if (p1 == p)
-                {
-                    
-                    return false;
-                }
-            }
-            return true;
+        {            
+            return !(e == p);
         }
 
         public static bool operator +(Estante e, Producto p)
         {
-            Producto[] aux = e.GetProductos();
-            if(e!=p)
+            bool ret = false;
+
+            if(e != p)
             {
-                for(int i=0;i>aux.Length;i++)
+                for(int i = 0; i < e.GetProductos().Length; i++)
                 {
-                    if(aux[i] is null)
+                    if(e.GetProductos()[i] is null)
                     {
-                        aux[i] = p;
+                        e.GetProductos()[i] = p;
+                        ret = true;
+                        break;
                     }
                 }
-                return true;
             }
-            else
-            {
-                return false;
-            }
+            return ret;
         }
 
     }

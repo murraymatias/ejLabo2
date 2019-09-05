@@ -31,11 +31,16 @@ namespace Entidades
 
         public static string MostrarProducto(Producto p)
         {
-             return string.Format(
-                "Marca: {0}\n" +
-                "Precio: {1}\n" +
-                "Codigo de barras: {2}", p.marca, p.precio, p.codigoDeBarras);
+            string ret = "";
 
+            if (!(p is null))
+            {
+                ret += string.Format(
+                   "Marca: {0}\n" +
+                   "Precio: {1}\n" +
+                   "Codigo de barras: {2}\n\n", p.marca, p.precio, p.codigoDeBarras);
+            }
+            return ret;
         }
 
         public static explicit operator string(Producto p)
@@ -45,26 +50,21 @@ namespace Entidades
 
         public static bool operator ==(Producto p1, Producto p2)
         {
-            if (p1.codigoDeBarras == p2.codigoDeBarras && p1.marca == p2.marca)
+            bool ret = false;
+
+            if (!(p1 is null || p2 is null))
             {
-                return true;
+                if (p1.codigoDeBarras == p2.codigoDeBarras && p1.marca == p2.marca)
+                {
+                    return true;
+                }
             }
-            else
-            {
-                return false;
-            }
+            return ret;
         }
 
         public static bool operator !=(Producto p1, Producto p2)
         {
-            if (p1.codigoDeBarras != p2.codigoDeBarras || p1.marca != p2.marca)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return (!(p1 == p2));
         }
 
         public static bool operator ==(Producto p, string marca)
