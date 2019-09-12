@@ -21,6 +21,11 @@ namespace Billetes
             this.cantidad = cantidad;
         }
 
+        public static void SetCotizacion(double n)
+        {
+            Euro.cotizRespectoDolar = n;
+        }
+
         public Euro(double cantidad, double cotizacion) : this(cantidad)
         {
             cotizRespectoDolar = cotizacion;
@@ -28,13 +33,13 @@ namespace Billetes
 
         public static explicit operator Pesos(Euro e)
         {
-            Pesos p = new Pesos((e.GetCantidad()/Euro.GetCotizacion())*Pesos.GetCotizacion());
+            Pesos p = new Pesos((e.GetCantidad()*Euro.GetCotizacion())*Pesos.GetCotizacion());
             return p;
         }
 
         public static explicit operator Dolar(Euro e)
         {
-            Dolar d = new Dolar(e.GetCantidad()*Euro.GetCotizacion());
+            Dolar d = new Dolar(e.GetCantidad()/Euro.GetCotizacion());
             return d;
         }
 
