@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio 47", "Ejercicio 47\Ejercicio 47.csproj", "{B971B165-82DE-45EB-BA23-3AF87975BF96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{BA8D510C-E3E0-4B29-8470-673272382EC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csproj", "{6C4D003A-1D3D-404A-B3A1-E659D479C086}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B971B165-82DE-45EB-BA23-3AF87975BF96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B971B165-82DE-45EB-BA23-3AF87975BF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B971B165-82DE-45EB-BA23-3AF87975BF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B971B165-82DE-45EB-BA23-3AF87975BF96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA8D510C-E3E0-4B29-8470-673272382EC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA8D510C-E3E0-4B29-8470-673272382EC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA8D510C-E3E0-4B29-8470-673272382EC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA8D510C-E3E0-4B29-8470-673272382EC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4D003A-1D3D-404A-B3A1-E659D479C086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4D003A-1D3D-404A-B3A1-E659D479C086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4D003A-1D3D-404A-B3A1-E659D479C086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4D003A-1D3D-404A-B3A1-E659D479C086}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50BF467D-5174-4657-B53A-CB947C640A84}
+	EndGlobalSection
+EndGlobal
