@@ -12,7 +12,7 @@ namespace ClassLibrary1
         private string nombre;
         private string apellido;
         private string dni;
-        private DateTime fechaNacimiento;
+        private DateTime? fechaNacimiento;
         private List<Mascota> listaMascotas;
 
         public Cliente(int id,string nombre,string apellido,string dni,DateTime? fechaNacimiento)
@@ -21,7 +21,7 @@ namespace ClassLibrary1
             this.nombre = nombre;
             this.apellido = apellido;
             this.dni = dni;
-            this.fechaNacimiento = (DateTime)fechaNacimiento;
+            this.fechaNacimiento = fechaNacimiento;
         }
 
         public int ID
@@ -48,7 +48,7 @@ namespace ClassLibrary1
             get => dni;
         }
 
-        public DateTime FechaNacimiento
+        public DateTime? FechaNacimiento
         {
             set => fechaNacimiento = value;
             get => fechaNacimiento;
