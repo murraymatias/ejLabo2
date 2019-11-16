@@ -54,7 +54,6 @@
             this.picPatente.Size = new System.Drawing.Size(171, 59);
             this.picPatente.TabIndex = 0;
             this.picPatente.TabStop = false;
-            this.picPatente.Click += new System.EventHandler(this.picPatente_Click);
             // 
             // lblPatenteNro
             // 

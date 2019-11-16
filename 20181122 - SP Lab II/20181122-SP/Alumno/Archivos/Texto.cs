@@ -25,8 +25,15 @@ namespace Archivos
                 datos = new Queue<Patente>();
                 while(reader.Peek() >= 0)
                 {
-                    Patente patente = reader.ReadLine().ValidarPatente();
-                    datos.Enqueue(patente);
+                    try
+                    {
+                        Patente patente = reader.ReadLine().ValidarPatente();
+                        datos.Enqueue(patente);
+                    }
+                    catch(PatenteInvalidaException e)
+                    {
+
+                    }
                 }
             }
         }

@@ -50,10 +50,5 @@ namespace Patentes
                 lblPatenteNro.Text = patente.ToString();
             }
         }
-
-        private void picPatente_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
