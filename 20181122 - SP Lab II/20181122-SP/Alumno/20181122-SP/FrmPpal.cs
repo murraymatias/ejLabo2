@@ -58,7 +58,7 @@ namespace _20181122_SP
 
         private void btnXml_Click(object sender, EventArgs e)
         {
-            Xml<Queue<Patente>> patente = new Xml<Queue<Patente>>();
+            Xml<Patente> patente = new Xml<Patente>();
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.ShowDialog();
             patente.Leer(openFileDialog.FileName,out this.cola);
